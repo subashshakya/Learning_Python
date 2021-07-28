@@ -1,4 +1,4 @@
-# using loops to display the fibonacci series
+# using for loops to display the fibonacci series
 
 term1 = 1
 term2 = 1
