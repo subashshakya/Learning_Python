@@ -51,3 +51,25 @@ alist = ["1", "2", "3", "4"]
 alist = [int(item) for item in alist]
 
 print(type(alist[0]))
+
+# list comprehension
+
+list_a = [1, 2, 3, 4]
+list_b = [4, 3, 2, 1]
+
+list_sum = [x + y for x in list_a for y in list_b]
+# adds element of the given index to all the element of the other list
+# output: [5, 4, 3, 2, 6, 5, 4, 3, 7, 6, 5, 4, 8, 7, 6, 5]
+print(list_sum)
+
+
+list_sum1 = [[x + y for x in list_a] for y in list_b]
+# adds the element of the second list of the specific index to all the elements in the other list(list_a here)
+# output: [[5, 6, 7, 8], [4, 5, 6, 7], [3, 4, 5, 6], [2, 3, 4, 5]]
+print(list_sum1)
+
+# adding in the opposite order
+
+list_sum2 = [[x + y for x in list_b] for y in list_a]
+print(list_sum2)
+# output: [[5, 4, 3, 2], [6, 5, 4, 3], [7, 6, 5, 4], [8, 7, 6, 5]]
