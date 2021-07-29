@@ -43,4 +43,11 @@ for i in Obj_list:
     print(i.name + " " + i.surname)
 # output: subash shakya
 #         starbucks coffee
-# indent py
+
+
+# changing the types inside a list
+
+alist = ["1", "2", "3", "4"]
+alist = [int(item) for item in alist]
+
+print(type(alist[0]))
