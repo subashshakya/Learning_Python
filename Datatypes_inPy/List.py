@@ -25,9 +25,8 @@ class For_example:
         self.name = name
         self.surname = surname
 
-    def Display():
-        print(self.name)
-        print(self.surname)
+    
+
 
 
 def say_hello():
